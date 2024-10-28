@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 800px; /* Adjust the maximum width as needed */
+            overflow-y: scroll; /* Add scrollbar for vertical overflow */
+            height: 600px; /* Set a fixed height for the card */
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>World Population Density Map</h1>
+        <div class="image-container">
+            <img src="DensityMap.png" alt="Population Density Map">
+        </div>
+        <p>
+            The geomap visualizes the population density of each country based on its LogDensity. 
+            LogDensity is a calculated value that helps to mitigate the impact of extreme outliers 
+            in the original data, which would otherwise distort the color shading and make it difficult
+            to identify trends. 
+        </p>
+        <p>
+            As expected, countries like India, Pakistan, and China, which are home to a significant 
+            portion of the world's population, exhibit high population density. 
+            Interestingly, the US, despite having a large population, does not appear to have 
+            an equally high density.
+        </p>
+        <p>
+            One limitation of this visualization is the challenge of effectively representing 
+            outliers using color coding. To address this, the LogDensity transformation was 
+            employed to improve the color shading and enhance the visibility of trends.
+        </p>
+    </div>
+</body>
+</html>
