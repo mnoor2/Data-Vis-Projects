@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  #chart {
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .axis-label {
+    font-size: 12px;
+    fill: #333;
+  }
+  
