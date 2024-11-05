@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Lab 4.1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 1000px; /* Adjust the maximum width as needed */
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Create two columns */
+            gap: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Visualization Lab 4.1</h1>
+
+        <div class="section">
+            <h2>Sales Distribution Across States</h2>
+            <img src="Fill Map.png" alt="Sales Distribution Map">
+            <p><strong>Analysis:</strong> California, Texas, and New York have the most sales. Kansas, South Dakota, and Iowa have the least amount of sales. Higher sales tend to be in the higher populated areas.</p>
+        </div>
+
+        <div class="section">
+            <h2>Category Sales Comparison</h2>
+            <img src="Bar chart.png" alt="Category Sales Bar Chart">
+            <p><strong>Analysis:</strong> Technology has the highest sales followed by Furniture.</p>
+        </div>
+
+        <div class="section">
+            <h2>Monthly Sales Trend</h2>
+            <img src="Line Chart.png" alt="Monthly Sales Trend Line Chart">
+            <p><strong>Analysis:</strong> Months like November have a spike largely due to the fact that its around that time thats near Christmas as well as December too. September has a spike probably because of school sales since School starts up usually around that time.</p>
+        </div>
+
+        <div class="section">
+            <h2>Profit vs. Sales Analysis</h2>
+            <img src="Scatter Plot.png" alt="Profit vs Sales Scatter Plot">
+            <p><strong>Analysis:</strong> Tables have a high sales rate but negative profit as well as Bookcases and Supplies.</p>
+        </div>
+
+        <div class="section">
+            <h2>Sales by Shipping Mode</h2>
+            <img src="2ndBarChart.png" alt="Sales by Shipping Mode Bar Chart">
+            <p><strong>Analysis:</strong> Standard class shipping generates the most sales and same day generates the least. Companies should divert most of their energy to ensuring those customers' demands are met perfectly.</p>
+        </div>
+    </div>
+</body>
+</html>
