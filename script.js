@@ -12,7 +12,7 @@ const svg = d3.select("#chart")
   .attr("transform", `translate(${margin.left},${margin.top})`);
 
 // Load the data
-d3.csv("spending_totals.csv").then(data => {
+d3.csv("/datasets/spending_totals.csv").then(data => {
   // Format the data
   data.forEach(d => {
     d.year = +d.year;
