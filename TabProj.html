@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Tableau Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 1000px; /* Adjust the maximum width as needed */
+            display: flex;
+            flex-direction: column; /* Change to vertical layout */
+            gap: 40px; /* Adjust spacing between sections */
+        }
+
+        .section {
+            margin-bottom: 0;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Visualization Tableau Project</h1>
+
+        <div class="section">
+            <h2>Investment Type Summary</h2>
+            <img src="images/Investment Type Summary.png" alt="Investment Type Summary">
+            <p><strong>Analysis:</strong> The highest average ROI percentage comes from Bonds with Real Estate coming second.</p>
+        </div>
+
+        <div class="section">
+            <h2>Top 5 Investments by ROI</h2>
+            <img src="images/Top 5 Investments by ROI.png" alt="Top 5 Investments by ROI">
+            <p><strong>Analysis:</strong> The top 5 Investments with the highest ROI are Investments 23, 49, 54, 13, and 80.</p>
+        </div>
+
+        <div class="section">
+            <h2>Return Trends by Risk Level</h2>
+            <img src="images/Return Trends by Risk Level.png" alt="Return Trends by Risk Level">
+            <p><strong>Analysis: High risk level Investments tend to spike with a higher return around November with a few noticable spikes around May. Medium risk investments seem to have the lowest return rate out of the three risk levels.</strong> </p>
+        </div>
+    </div>
+</body>
+</html>
