@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Project 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 1000px; /* Adjust the maximum width as needed */
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Create two columns */
+            gap: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Visualization Project 3</h1>
+
+        <div class="section">
+            <h2>Distribution of Outcome</h2>
+            <img src="images/Distribution of Outcome.png" alt="Distribution of Outcome">
+            <p><strong>Analysis:</strong> This is an analysis to determine the best way to identify diabetes in people of all age groups. This study will provide exactly the reasoning behind which way is the best, as well as determining the likelyhood of diabetes. 
+
+
+                We can see here that in terms of the Distribution of Diabetes vs No Diabetes ( 1 vs 0), the majority of the people in this dataset seem to not have diabetes. Roughly 65% of the participants in this dataset are non-diabetic. We can only wonder what exactly the distribution of the people in each age group as well as what their BMI and Glucose levels are.</p>
+        </div>
+
+        <div class="section">
+            <h2>BMI vs Glucose</h2>
+            <img src="images/BMI vs Glucose.png" alt="BMI vs Glucose">
+            <p><strong>Analysis:</strong> Here, we compare the BMI vs the Glucose levels. We can see that for the most part, the more higher the glucose levels, the more older the participant is. Here, we can also see that participants with higher glucose levels tend to be diabetic however there are some inconsistent outliers that say otherwise. For the most part, we can see that testing glucose levels is a very trustable way to see if someone has diabetes or not.</p>
+        </div>
+
+        <div class="section">
+            <h2>BMI Distribution Across Age Groups</h2>
+            <img src="images/BMI Distribution Across Age Groups.png" alt="BMI Distribution Across Age Groups">
+            <p><strong>Analysis:</strong> Here, we can see the BMI distribution of each age group. We can see that the average BMI across all age groups tends to be near the 25-35 range. We can see that as the participants get older, they have more of a risk of a higher BMI which can lead to diabetes. Here, we can see that alot of the diabetic ranges in the BMI tend to be within this same range as well.</p>
+        </div>
+
+        <div class="section">
+            <h2>Average Glucose Across Age Groups</h2>
+            <img src="images/Average Glucose Across Age Groups.png" alt="Average Glucose Across Age Groups">
+            <p><strong>Analysis:</strong> From what we've seen, glucose tends to be the most reliable way to tell if someone has diabetes or not. Here, we can see that higher glucose levels usually means you are diabetic. The glucose levels tend to peak in the mid to early 60's with some noticable rises in the 30's. From what we've seen, we can confidently say that diabetes usually occurs in people with much higher glucose levels than normal.</p>
+        </div>
+        <div class="section">
+            <a href="https://public.tableau.com/app/profile/mohamed.noor2324/viz/DiabetesAnalysis_17329929833340/DiabetesAnalysisDashboard">Link to Dashboard</a>
+        </div>
+    </div>
+    
+</body>
+</html>
